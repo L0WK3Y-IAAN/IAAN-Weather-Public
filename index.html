@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <title>IAAN Weather</title>
+    <meta name="title" content="IAAN Weather">
+    <meta name="description" content="Basic weather app by IAAN | L0WK3Y.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://l0wk3y-iaan.github.io/weather-app/">
+    <meta property="og:title" content="IAAN Weather">
+    <meta property="og:description" content="Basic weather app by IAAN | L0WK3Y.">
+    <meta property="og:image" content="https://iaansec.com/images/sun.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://l0wk3y-iaan.github.io/weather-app/">
+    <meta property="twitter:title" content="IAAN Weather">
+    <meta property="twitter:description" content="Basic weather app by IAAN | L0WK3Y.">
+    <meta property="twitter:image" content="https://iaansec.com/images/sun.png">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/sun.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load Bootstrap. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <title>IAAN Weather</title>
+</head>
+
+<body>
+    <p id="time"></p>
+    <img id="cloudBody" class="card-body" src="/assets/img/cloud_PNG0.png" alt="">
+    <div id="card">
+        <h5 id="title" class="card-title">☁️IAAN Weather☁️</h5>
+        <input onkeypress='locationSubmission(event)' id="locationInput" class="form-control" type="text" required="true" placeholder="Enter your location">
+        <ul>
+            <div>
+                <img id="weatherIcon" src="...">
+            </div> 
+            <li id="locationID">Location: </li> 
+            <li id="tempID">Temp: </li>
+            <li id="descID">Description: </li> <br><br>
+            <ul id="windID">Wind </ul>
+            <li id="windDegreeID">Degree: </li>
+            <li id="windSpeedID">Speed: </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <!-- Load React CDN. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    
+    <!-- Load our React component. -->
+    <script src="app.js"></script>
+
+    <!-- Load Bootstrap compiled JQuery files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Load Bootstrap compiled Javascript files -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+</html>
+
